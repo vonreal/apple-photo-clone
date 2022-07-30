@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fxg-dD-d3V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Albums-->
+        <scene sceneID="E0r-e8-trb">
+            <objects>
+                <viewController id="as3-rZ-2ai" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Pw-io-brA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nOO-Qe-wDW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Albums" image="rectangle.stack.fill" catalog="system" id="BO8-ic-SYE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ga-UI-oh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="621"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="sVB-Ii-2Lb">
+            <objects>
+                <viewController id="Jpo-bZ-GT9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5m1-dc-KNr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mTV-xP-mZt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Ng1-KE-4We"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrZ-P3-LAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="1271"/>
+        </scene>
+        <!--For You-->
+        <scene sceneID="ZMg-IP-kdu">
+            <objects>
+                <viewController id="ums-5J-oc9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ljl-9U-V6w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2Ky-oX-PzS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="For You" image="heart.text.square.fill" catalog="system" id="TnT-Fl-iAm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZ6-Kt-tPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="-31"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zzE-2C-Riw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fxg-dD-d3V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zef-Iq-OKw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lhi-2U-Fqd" kind="relationship" relationship="viewControllers" id="WFd-tN-UKx"/>
+                        <segue destination="ums-5J-oc9" kind="relationship" relationship="viewControllers" id="3Yd-jz-Gsr"/>
+                        <segue destination="as3-rZ-2ai" kind="relationship" relationship="viewControllers" id="OTS-OF-4lV"/>
+                        <segue destination="Jpo-bZ-GT9" kind="relationship" relationship="viewControllers" id="chq-tv-nMh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95J-m8-6BX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2499" y="-31"/>
+        </scene>
+        <!--All Photos-->
+        <scene sceneID="e6P-Nb-H3s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lhi-2U-Fqd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="All Photos" image="photo.on.rectangle.fill" catalog="system" id="AiQ-eI-cCp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TiZ-2i-xHj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pf6-W5-dYj" kind="relationship" relationship="rootViewController" id="NMX-9h-wYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HAs-72-o5n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423.1884057971015" y="-680.35714285714278"/>
+        </scene>
+        <!--All Photos View Controller-->
+        <scene sceneID="bTJ-Am-hEn">
+            <objects>
+                <viewController id="pf6-W5-dYj" customClass="AllPhotosViewController" customModule="apple_photo_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UE1-8m-sfP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-Ia-VS3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AHQ-2v-x0b">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P27-g3-0Ma"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P27-g3-0Ma" firstAttribute="bottom" secondItem="8gz-Ia-VS3" secondAttribute="bottom" id="Iaz-HC-Htg"/>
+                            <constraint firstItem="P27-g3-0Ma" firstAttribute="trailing" secondItem="8gz-Ia-VS3" secondAttribute="trailing" id="SlJ-5G-Zjk"/>
+                            <constraint firstItem="8gz-Ia-VS3" firstAttribute="leading" secondItem="P27-g3-0Ma" secondAttribute="leading" id="VJf-lp-wvg"/>
+                            <constraint firstItem="8gz-Ia-VS3" firstAttribute="top" secondItem="P27-g3-0Ma" secondAttribute="top" id="wl8-Xj-FYm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9vT-vf-heg"/>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="8gz-Ia-VS3" id="NJr-hj-C58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fC3-jn-IuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="-680"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="8Wu-y0-Czs">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetailViewController" id="8Ts-NO-Pqs" customClass="PhotoDetailViewController" customModule="apple_photo_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3u-ZA-cO0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQZ-Bs-CLf">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="aZI-qY-gwT"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="iSq-cx-XT7"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zPb-ns-PlZ"/>
+                                    <barButtonItem title="Item" image="heart" catalog="system" id="3yr-9x-Pi5"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="e58-L1-c0h"/>
+                                    <barButtonItem title="Item" image="info.circle" catalog="system" id="35y-Ou-ljO"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z2T-7r-VWw"/>
+                                    <barButtonItem title="Item" image="trash" catalog="system" id="dJa-dW-ppU"/>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0E5-PI-xuj">
+                                <rect key="frame" x="0.0" y="83" width="414" height="730"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ddx-8Y-EZv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hQZ-Bs-CLf" secondAttribute="trailing" id="1D9-WQ-5sm"/>
+                            <constraint firstItem="ddx-8Y-EZv" firstAttribute="trailing" secondItem="0E5-PI-xuj" secondAttribute="trailing" id="1i6-az-xth"/>
+                            <constraint firstItem="0E5-PI-xuj" firstAttribute="leading" secondItem="ddx-8Y-EZv" secondAttribute="leading" id="FOm-12-ev1"/>
+                            <constraint firstItem="hQZ-Bs-CLf" firstAttribute="top" secondItem="0E5-PI-xuj" secondAttribute="bottom" id="Rzw-DP-p6e"/>
+                            <constraint firstItem="ddx-8Y-EZv" firstAttribute="bottom" secondItem="hQZ-Bs-CLf" secondAttribute="bottom" id="WHv-Nj-cgR"/>
+                            <constraint firstItem="hQZ-Bs-CLf" firstAttribute="leading" secondItem="ddx-8Y-EZv" secondAttribute="leading" id="cdo-oA-18l"/>
+                            <constraint firstItem="0E5-PI-xuj" firstAttribute="centerX" secondItem="q3u-ZA-cO0" secondAttribute="centerX" id="iZA-Os-orn"/>
+                            <constraint firstItem="0E5-PI-xuj" firstAttribute="centerY" secondItem="q3u-ZA-cO0" secondAttribute="centerY" id="lGG-6x-17W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="0E5-PI-xuj" id="R75-Hr-pJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go9-RR-IED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="-680"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.text.square.fill" catalog="system" width="128" height="114"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="97"/>
+        <image name="rectangle.stack.fill" catalog="system" width="128" height="122"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
